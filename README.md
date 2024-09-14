@@ -1,5 +1,6 @@
 # Sahil-Program-CPP_TLS24
 program managemen keuangan 
+
 #include <iostream>
 #include <iomanip>
 #include <vector>
@@ -24,6 +25,7 @@ public:
     const string& getDate() const {
         return date;
     }
+   //SS1
 
     void setDate(const string& newDate) {
         date = newDate;
@@ -47,6 +49,8 @@ public:
         amount = newAmount;
     }
 };
+
+//SS 2
 
 class FinancialManager {
 private:
@@ -76,6 +80,8 @@ public:
 
         cout << "Masukkan jumlah transaksi: $";
         cin >> amount;
+
+        //SS 3
 
         Transaction* newTransaction = new Transaction(date, description, type, amount);
         transactions.push_back(newTransaction);
